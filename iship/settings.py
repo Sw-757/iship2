@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-x992-1l_5*+ja^nb1s0&j&#%$a-e3gbveg5uj)+ejn$wv(2%)i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1','nameofapp.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1','iship1.herokuapp.com']
 
 
 # Application definition
@@ -92,11 +92,11 @@ DATABASES = {
     }
 }
 
-'''
+
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
