@@ -18,6 +18,11 @@ GROUP = (
 
 
 
+class React(models.Model):
+	name = models.CharField(max_length=30)
+	detail = models.CharField(max_length=500)
+
+
 class Kid(models.Model):
     name = models.CharField(max_length=30)
     age = models.IntegerField()
