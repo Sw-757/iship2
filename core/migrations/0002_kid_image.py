@@ -29,7 +29,6 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('image_url', models.URLField()),
-                ('image', models.ImageField(upload_to='')),
                 ('created_on', models.DateTimeField()),
                 ('updated_on', models.DateTimeField(auto_now_add=True)),
                 ('is_apporved', models.BooleanField(default=False)),
